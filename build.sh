@@ -5,7 +5,7 @@ if [[ $(grep "tar \${LIVE_IMAGE_NAME}-\${LIVE_IMAGE_ARCHITECTURE}." /usr/lib/liv
 fi
 
 sudo lb build
-rm live-image-armhf.tar.tar
+rm -rf live-image-armhf.tar.tar
 pushd binary
 sudo tar -cf ../rootfs.tar .
 popd
