@@ -13,3 +13,9 @@ VARIANT=\"CHIP OS Pro\"\n\
 VARIANT_ID=$(cat /etc/os-variant)\n" | tee /etc/os-release
 
 chmod u+s `which ping`
+
+apt-get clean
+apt-get autoclean
+apt-get autoremove
+rm -rf /var/lib/apt/lists/*
+rm -rf /usr/lib/locale/*
