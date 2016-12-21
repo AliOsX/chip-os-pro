@@ -2,7 +2,7 @@
 
 
 #this is needs to be done after flash-kernel and before a kernel.deb is installed
-echo "NextThing C.H.I.P." > /etc/flash-kernel/machine
+#echo "NextThing C.H.I.P." > /etc/flash-kernel/machine
 echo "NextThing C.H.I.P. Pro" >> /etc/flash-kernel/machine
 
 cat << EOF >> /usr/share/flash-kernel/db/all.db
