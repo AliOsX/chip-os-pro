@@ -3,7 +3,7 @@
 
 #this is needs to be done after flash-kernel and before a kernel.deb is installed
 echo "NextThing C.H.I.P." > /etc/flash-kernel/machine
-echo "NextThing Crumb" >> /etc/flash-kernel/machine
+echo "NextThing C.H.I.P. Pro" >> /etc/flash-kernel/machine
 
 cat << EOF >> /usr/share/flash-kernel/db/all.db
 
@@ -18,7 +18,6 @@ EOF
 for i in boot/vmlinuz* ; do
   kernel="$(basename "$i")"
   version="${kernel##vmlinuz-}"
-  apt-get install --reinstall linux-image-${version}
   initrd="boot/initrd.img-${version}"
   [ -f "$initrd" ] || update-initramfs -c -k "$version" || true
   cp /boot/vm* /boot/zImage
