@@ -5,8 +5,8 @@
 LB_BINARY_FILESYSTEM="ext3"
 
 # $LB_APT_INDICES: set apt/aptitude generic indices
-# (Default: none)
-LB_APT_INDICES="none"
+# (Default: false)
+LB_APT_INDICES="false"
 
 # $LB_BOOTAPPEND_LIVE: set boot parameters
 # (Default: empty)
@@ -138,12 +138,12 @@ LB_NET_COW_SERVER=""
 LB_NET_TARBALL="true"
 
 # $LB_FIRMWARE_BINARY: include firmware packages in debian-installer
-# (Default: true)
-LB_FIRMWARE_BINARY="true"
+# (Default: false)
+LB_FIRMWARE_BINARY="false"
 
 # $LB_FIRMWARE_CHROOT: include firmware packages in debian-installer
-# (Default: true)
-LB_FIRMWARE_CHROOT="true"
+# (Default: false)
+LB_FIRMWARE_CHROOT="false"
 
 # $LB_SWAP_FILE_PATH: set swap file path
 # (Default: )
